@@ -135,6 +135,10 @@ namespace GitVersion
         {
             get { return _semver.PreReleaseTag.HasTag() ? _semver.PreReleaseTag.ToString("lp").ToLower() : null; }
         }
+        public string NuGetPreReleaseTagV3
+        {
+            get { return PreReleaseTagWithDash; }
+        }
 
         public string NuGetPreReleaseTag
         {
