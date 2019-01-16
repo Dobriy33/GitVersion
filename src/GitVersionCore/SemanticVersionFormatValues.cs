@@ -1,4 +1,4 @@
-﻿namespace GitVersion
+namespace GitVersion
 {
     using System.Globalization;
 
@@ -117,16 +117,18 @@
             get { return _semver.BuildMetaData.CommitDate.UtcDateTime.ToString(_config.CommitDateFormat, CultureInfo.InvariantCulture); }
         }
 
-        // TODO When NuGet 3 is released: public string NuGetVersionV3 { get { return ??; } }
-
         public string NuGetVersionV2
         {
             get { return LegacySemVerPadded.ToLower(); }
         }
+        public string NuGetVersionV3
+        {
+            get { return FullSemVer; }
+        }
 
         public string NuGetVersion
         {
-            get { return NuGetVersionV2; }
+            get { return FullSemVer; }
         }
 
         public string NuGetPreReleaseTagV2
@@ -136,7 +138,7 @@
 
         public string NuGetPreReleaseTag
         {
-            get { return NuGetPreReleaseTagV2; }
+            get { return PreReleaseTagWithDash; }
         }
 
         public string DefaultInformationalVersion

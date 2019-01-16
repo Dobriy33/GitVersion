@@ -1,4 +1,4 @@
-﻿namespace GitVersion
+namespace GitVersion
 {
     using System;
     using System.Text.RegularExpressions;
@@ -76,6 +76,7 @@
                 informationalVersion,
                 semverFormatValues.CommitDate,
                 semverFormatValues.NuGetVersion,
+                semverFormatValues.NuGetVersionV3,
                 semverFormatValues.NuGetVersionV2,
                 semverFormatValues.NuGetPreReleaseTag,
                 semverFormatValues.NuGetPreReleaseTagV2,
