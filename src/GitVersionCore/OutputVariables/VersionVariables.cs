@@ -1,4 +1,4 @@
-﻿namespace GitVersion
+namespace GitVersion
 {
     using System;
     using System.Collections;
@@ -36,8 +36,10 @@
                                 string informationalVersion,
                                 string commitDate,
                                 string nugetVersion,
+                                string nugetVersionV3,
                                 string nugetVersionV2,
                                 string nugetPreReleaseTag,
+                                string nugetPreReleaseTagV3,
                                 string nugetPreReleaseTagV2,
                                 string commitsSinceVersionSource,
                                 string commitsSinceVersionSourcePadded)
