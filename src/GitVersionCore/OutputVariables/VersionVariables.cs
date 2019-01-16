@@ -68,8 +68,10 @@ namespace GitVersion
             CommitDate = commitDate;
             NuGetVersion = nugetVersion;
             NuGetVersionV2 = nugetVersionV2;
+            NuGetVersionV3 = nugetVersionV3;
             NuGetPreReleaseTag = nugetPreReleaseTag;
             NuGetPreReleaseTagV2 = nugetPreReleaseTagV2;
+            NuGetPreReleaseTagV3 = nugetPreReleaseTagV3;
             CommitsSinceVersionSource = commitsSinceVersionSource;
             CommitsSinceVersionSourcePadded = commitsSinceVersionSourcePadded;
         }
@@ -96,8 +98,10 @@ namespace GitVersion
         public string Sha { get; private set; }
         public string ShortSha { get; private set; }
         public string NuGetVersionV2 { get; private set; }
+        public string NuGetVersionV3 { get; private set; }
         public string NuGetVersion { get; private set; }
         public string NuGetPreReleaseTagV2 { get; private set; }
+        public string NuGetPreReleaseTagV3 { get; private set; }
         public string NuGetPreReleaseTag { get; private set; }
         public string CommitsSinceVersionSource { get; private set; }
         public string CommitsSinceVersionSourcePadded { get; private set; }
