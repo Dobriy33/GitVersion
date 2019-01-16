@@ -121,10 +121,6 @@ namespace GitVersion
         {
             get { return LegacySemVerPadded.ToLower(); }
         }
-        public string NuGetVersionV3
-        {
-            get { return FullSemVer; }
-        }
 
         public string NuGetVersion
         {
@@ -134,10 +130,6 @@ namespace GitVersion
         public string NuGetPreReleaseTagV2
         {
             get { return _semver.PreReleaseTag.HasTag() ? _semver.PreReleaseTag.ToString("lp").ToLower() : null; }
-        }
-        public string NuGetPreReleaseTagV3
-        {
-            get { return PreReleaseTagWithDash; }
         }
 
         public string NuGetPreReleaseTag
